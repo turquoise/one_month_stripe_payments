@@ -1,12 +1,12 @@
 class ChargesController < ApplicationController
 
 	def create
-  		product = Product.find_by_sku("GROHACK2")
+  		product = Product.find(params[:product_id])
 
   		customer = Stripe::Customer.create(
 		    :email => params[:stripeEmail],
 		    :card  => params[:stripeToken],
-        :plan => "GROHACK2"
+        :plan => "GROHACK2" # you need to create a plan for each of the 3 products.
 		  	)
 
   		#charge = Stripe::Charge.create(
