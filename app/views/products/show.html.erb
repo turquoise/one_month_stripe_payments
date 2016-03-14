@@ -1,8 +1,9 @@
-<% content_for :head do %>
-<%= image_tag('https://s3.amazonaws.com/monica-one-month-stripe/header-image.jpg', id: 'content-header-img', alt: 'Learn Growth Hacking' ) %>
-<% end %>
 
-    <section id="content-details" class="row clearfix">
+<% content_for :head do %>
+ <%= image_tag @product.header, id: 'content-header-img', alt: "Learn #{@product.title}" %>
+ <% end %>
+
+ <section id="content-details" class="row clearfix">
         <article id="details-article" class="col-sm-8">
             <h1 id="article-title"><%= @product.title %><span class="font-weight-light"><%= @product.subtitle %></span></h1>
             <h3><small>By <a href="#" data-toggle="modal" data-target="#author-modal"><%= @product.author %></a></small></h3>
@@ -95,6 +96,3 @@ Made by <a href="http://onemonth.com" target="_blank">
     </div>
   </div>
 </div>
-
-
-

@@ -11,7 +11,8 @@ AdminUser.create!(email: 'admin@example.com', password: 'password', password_con
 
 
 growth_hacking_monthly = Product.create(title: "Growth Hacking Monthly ",
-    image: "product-growth.png",
+    image: "https://s3.amazonaws.com/monica-one-month-stripe/product-growth.png",
+    header: "https://s3.amazonaws.com/monica-one-month-stripe/header-growth-hacking.png",
     subtitle: "Ongoing Course ", 
     details: "We'll charge you monthlyfor unlimited access to our mentoring team.", 
     author: "Mattan Griffel ", 
@@ -38,7 +39,8 @@ growth_hacking_monthly = Product.create(title: "Growth Hacking Monthly ",
             })
 
 copywriting_monthly = Product.create(title: "Copywriting Monthly ",
-    image: "product-copywriting.png",
+    image: "https://s3.amazonaws.com/monica-one-month-stripe/product-copywriting.png",
+    header: "https://s3.amazonaws.com/monica-one-month-stripe/header-copywriting.png",
     subtitle: "Ongoing Course ", 
     details: "We'll charge you monthlyfor unlimited access to our mentoring team.", 
     author: "Mattan Griffel ", 
@@ -64,7 +66,8 @@ copywriting_monthly = Product.create(title: "Copywriting Monthly ",
             })
 
 analytics_monthly = Product.create(title: "Analytics Monthly ",
-    image: "product-analytics.png",
+    image: "https://s3.amazonaws.com/monica-one-month-stripe/product-analytics.png",
+    header: "https://s3.amazonaws.com/monica-one-month-stripe/header-analytics.png",
     subtitle: "Ongoing Course ", 
     details: "We'll charge you monthlyfor unlimited access to our mentoring team.", 
     author: "Mattan Griffel ", 
