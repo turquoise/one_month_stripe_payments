@@ -14,6 +14,7 @@ growth_hacking = Product.create(title: "Growth Hacking ",
     length: "30 minutes",
     price: "4.99", 
     sku: "GROHACK1",
+    download_url: "https://s3.amazonaws.com/one-month-stripe-payments/Peter+Bell+Resume.pdf", 
     author_image_name: "https://s3.amazonaws.com/monica-one-month-stripe/teacher-image.jpg",
 	description: %{
 		<p>In this talk, Mattan Griffel introduces you to the concept of Growth Hacking and shares his favorite tips for getting started as a growth hacker.</p>
@@ -31,7 +32,3 @@ growth_hacking = Product.create(title: "Growth Hacking ",
                 <p>Follow me on Twitter <a href="https://twitter.com/mattangriffel" target="_blank">@mattangriffel</a></p>
 
             })
-
-
-
-
